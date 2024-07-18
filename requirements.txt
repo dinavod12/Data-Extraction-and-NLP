@@ -1,0 +1,71 @@
+1) Read the Input File:
+
+. Load the input.xlsx file which contains the URLs and their corresponding URL_ID.
+
+. Use the pandas library to read the Excel file and inspect its structure.
+
+2) Extract Article Text:
+
+. For each URL, send an HTTP request to fetch the webpage content.
+
+. Parse the HTML content using BeautifulSoup to extract the article's title and main   text while ignoring headers, footers, and other irrelevant parts.
+
+3) Text Analysis:
+
+. Perform textual analysis on the extracted text to compute various metrics including   positive and negative scores, polarity, subjectivity, average sentence length,   percentage of complex words, fog index, complex word count, word count, syllables per   word, personal pronouns, and average word length.
+
+. Use nltk (Natural Language Toolkit) to tokenize the text and calculate these metrics.
+
+4) Save the Extracted Text and Analysis Results:
+
+. Save each article's text in a separate file named after its URL_ID.
+
+. Compile the analysis results into a DataFrame and save it as an Excel file for further   inspection
+
+5) Running the .py File
+
+. Set Up the Environment:
+
+. Ensure you have Python installed on your machine.
+  Create a virtual environment (optional but recommended) to manage dependencies.
+
+6) Install Dependencies:
+
+. Install the necessary Python libraries using pip. Run the following commands in your   terminal or command prompt:
+ 
+ pip install pandas requests beautifulsoup4 nltk openpyxl
+
+7) Save the Script:
+
+. Copy the provided Python script into a .py file, for example,   article_text_analysis.py.
+
+8) Run the Script:
+
+. Open a terminal or command prompt.
+
+. Navigate to the directory containing the article_text_analysis.py file.
+
+. Run the script using the following command:
+
+. python article_text_analysis.py
+
+
+9) Output:
+
+. The script will save each article's text in a separate file in the specified output   directory.
+
+. An Excel file named text_analysis_results.xlsx containing the analysis results will   also be saved in the output directory.
+
+10) Dependencies Required:
+
+.  pandas: For reading the Excel file and handling data.
+
+.  requests: For making HTTP requests to fetch webpage content.
+
+.  beautifulsoup4: For parsing HTML content and extracting text.
+
+.  nltk: For natural language processing tasks such as tokenization and sentiment    analysis.
+
+.  openpyxl: For saving the DataFrame as an Excel file.
+
+
